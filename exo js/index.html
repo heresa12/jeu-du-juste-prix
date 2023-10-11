@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jeu du Plus ou Moins</h1>
+        <p>Devinez le nombre entre 1 et 100 en 10 coups maximum.</p>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <p>Devinez le nombre !</p>
+                </div>
+                <div class="card-back">
+                    <p>Résultat : <span id="result">???</span></p>
+                    <button id="restartButton">Recommencer</button>
+
+                    <div class="game">
+                        <div class="message" id="message"></div>
+                        <input type="number" id="userGuess" min="1" max="100" autofocus>
+                        <button id="guessButton">Valider</button>
+                    </div>
+                    <div class="result" id="result">
+                        <p>Résultat : <span id="resultValue">???</span></p>
+                    <button id="restartButton">Recommencer</button>
+    
+                   </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+</body>
+
+
+</html>

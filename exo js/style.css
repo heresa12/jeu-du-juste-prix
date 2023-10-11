@@ -1,0 +1,71 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c99868;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+button {
+  padding: 10px 20px;
+  background-color: #5a3d20;
+  color: #c8ad7f;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+cursor: url('anubis.png'),auto;
+}
+button:hover {
+  background-color: #c99868;
+}
+.card {
+  perspective: 1000px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ 
+}
+.card-inner {
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+.card-front,
+.card-back {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid white;
+  font-size: 20px;
+  width: 200px;
+  height: 300px;
+  background-image: url('1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 6px black;
+}
+.card-back {
+  transform: rotateY(180deg);
+}
+.message{
+  color:white;
+}
